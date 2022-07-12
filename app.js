@@ -19,8 +19,8 @@ app.get('/', (req, res) => {
 
 app.use('/api/v1/products', productsRouter)
 
-app.use(notFound)
 app.use(errorHandler)
+app.use(notFound)
 
 
 const port = process.env.PORT || 3000
